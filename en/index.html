@@ -32,19 +32,19 @@
           <div class="header__item menu ml-4">
             <a class="header__link px-5" href="javascript:void(0)">
               <i class="icon-menu pr-2"></i>
-              More
+              Call for projects
             </a>
           </div>
           <div class="header__item menu position-fixed right-0 ml-4">
             <a class="header__link px-5 button-menu" href="javascript:void(0)">
               <i class="icon-menu pr-2"></i>
-              More
+              Call for projects
             </a>
           </div>
         </div>
         <!-- Button Menu Mobile -->
         <div class="d-flex d-md-none px-3">
-          <a class="header__button button-menu-mobile" href="javascript::void(0);">
+          <a class="header__button button-menu-mobile" href="javascript:void(0);">
             <svg class="position-absolute" width="20" height="20">
               <image xlink:href="./assets/images/3.svg" src="./assets/images/3.png" width="20" height="20"/>
             </svg>
@@ -75,7 +75,8 @@
                 <!-- <span class="banner__subtitle text-light pl-4">Challenge</span> -->
               </div>
               <span class="banner__text fourth pt-4">
-                Decentralized RADR Finance, the next generation of DeFi(Decentralized Finance) ecosystem. Trustless and transparent. Let your wealth truly under control. 
+                RADR Lab DeFi Project Incubator is designed to invest in and support third-party DeFi startups, motivate global developers, reward ecosystem constructors and support ecosystem constructions. Also, it invests in quality projects and participates in project development as the early governance party.<br>
+                The lab can not only provide financial support for quality projects that participate in RADR DeFi project incubation, but also provide all-round support and incentives such as offering liquidity incentives, assisting in improving ecosystem liquidity and token lock-up, helping warm up and accelerate quality projects. 
               </span>
             </div>
           </div>
@@ -88,7 +89,7 @@
                 <!-- <span class="banner__subtitle text-light pl-4">Solution</span> -->
               </div>
               <span class="banner__text fourth pt-4">
-                Be the first APP on DeRa.Finance to earn support from our seed fund.
+                Just need to send an E-mail to dev@radarlab.org for incubation application (mail title starts with ‘DEFI Incubator’) with information such as project name, website, introduction, contact, type, valuation and expected fundraising. The lab will screen projects based on products, ecosystem value, team, outlook, among other things, and provide ecosystem support for the final winner.
               </span>
             </div>
             <div class="my-md-5">
@@ -114,15 +115,15 @@
     <!-- MENU MOBILE -->
     <div class="menu-mobile d-flex d-md-none">
       <div class="container py-5">
-        <div class="row">
-          <div class="col-12 py-4">
-            <span class="menu-mobile__title pb-5 mb-5">Apply Now</span>
-          </div>
-        </div>
         <div class="row justify-content-between">
-          <div></div>
           <div class="col-12">
-            <a class="footer__button d-block text-center mb-3" href="javascript:void(0)">Apply Now</a>
+            <h3>RADR Lab DeFi Project Incubation Is In Progress</h3>
+            <span class="banner__text d-md-block" style="display: inline-block;font-size: 20px;margin-bottom: 2.5rem">
+              DeRa.Finance to earn support from our seed fund.
+            </span>
+          </div>
+          <div class="col-12">
+            <a class="footer__button d-block text-center mb-3" href="mailto:dev@radarlab.org">Apply Now</a>
           </div>
         </div>
       </div>
@@ -162,9 +163,9 @@
                     </div>
                   </div>
                   <div class="d-flex flex-column justify-content-between z-index-9" style="max-width: 550px;margin-top: 8.2rem;text-align: left;">
-                    <h3>RADR Lab DeFi Project Incubation Is Starting</h3>
+                    <h3>RADR Lab DeFi Project Incubation Is In Progress</h3>
                     <span class="banner__text d-md-block" style="font-size: 20px;margin-bottom: 2.5rem">
-                      DeRa.Finance is calling for DeFi projects. Be the first APP on DeRa.Finance to earn support from our seed fund.
+                      DeRa.Finance is calling for DeFi projects. <br>Be the first APP on DeRa.Finance and earn support from our seed fund.
                     </span>
                     <div class="row">
                       <div class="col-12 col-md-8 d-flex flex-wrap justify-content-between z-index-9"
@@ -173,7 +174,7 @@
                           <!-- <a class="banner__button d-inline-block mr-3 mr-md-4" href="javascript:void(0)"
                             >Our Focus</a
                           > -->
-                          <a class="footer__button d-inline-block mr-md-4" href="mailto:dev@radarlab.org">Apply Now</a>
+                          <a class="apl_now footer__button d-inline-block mr-md-4" href="javascript:void(0)" onclick="showMore">Apply Now</a>
                         </div>
                       </div>
                     </div>
@@ -274,7 +275,7 @@
                       <!-- <a class="banner__button d-inline-block mr-3 mr-md-4" href="javascript:void(0)"
                         >Our Focus</a
                       > -->
-                      <a class="footer__button d-inline-block mr-md-4" href="mailto:dev@radarlab.org">Apply Now</a>
+                      <a class="apl_now footer__button d-inline-block mr-md-4" href="javascript:void(0)" onclick="showMore">Apply Now</a>
                     </div>
                   </div>
                 </div>
@@ -346,5 +347,21 @@
     </footer>
 
     <script defer async src="assets/scripts/scripts.min.js"></script>
+    <script>
+      function showMore () {
+        var sel = document.body.clientWidth <768 ? 'menu-mobile' : 'menu-desktop'
+        var ele = document.querySelector(`.${sel}`)
+        var ele2 = document.querySelector(`.${sel} .slice-menu`)
+        ele.style.setProperty('top', '0', 'important')
+        ele2.style.setProperty('left', '0', 'important')
+        ele2.style.setProperty('opacity', '1', 'important')
+      }
+      window.onload = function (e) {
+        let cliEs = document.querySelectorAll('.apl_now')
+        cliEs.forEach(ref => {
+          ref.addEventListener('click', function (e){ showMore() })
+        })
+      }
+    </script>
   </body>
 </html>

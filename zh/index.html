@@ -33,13 +33,13 @@
           <div class="header__item menu ml-4">
             <a class="header__link px-5" href="javascript:void(0)">
               <i class="icon-menu pr-2"></i>
-              了解更多
+              项目招募中
             </a>
           </div>
           <div class="header__item menu position-fixed right-0 ml-4">
             <a class="header__link px-5 button-menu" href="javascript:void(0)">
               <i class="icon-menu pr-2"></i>
-              了解更多
+              项目招募中
             </a>
           </div>
         </div>
@@ -76,8 +76,8 @@
                 <!-- <span class="banner__subtitle text-light pl-4">Challenge</span> -->
               </div>
               <span class="banner__text fourth pt-4">
-                在2020年12月宣布支持DeFi之后，雷达实验室于2021年3月再次宣布成立DeFi项目孵化器，投资并支持第三方DeFi创业团队。为了鼓励全球开发者，奖励生态建设者，雷达实验室将成立DeFi生态种子基金。种子基金将用于扶持行业生态建设，投资优质项目并作为早期治理方共同参与项目发展。而作为回报，种子基金的出资者将优先获得DeFi项目空投。<br />
-                对于参与雷达DeFi项目孵化的优质项目，除了可以获得大量的资金扶持外，实验室也将给予全方位的支持与激励，如提供流动性激励，协助提升生态流动性和代币锁仓量，帮助优质项目启动预热以及加速等。
+                雷达实验室DeFi项目孵化器，旨在于投资并支持第三方DeFi创业团队。鼓励全球开发者，奖励生态建设者，扶持行业生态建设，投资优质项目并作为早期治理方共同参与项目发展。<br>
+                对于参与雷达DeFi项目孵化的优质项目，实验室不仅给予资金扶持，还将提供全方位的支持与激励，如提供流动性激励，协助提升生态流动性和代币锁仓量，帮助优质项目启动预热以及加速等。
               </span>
             </div>
           </div>
@@ -90,7 +90,7 @@
                 <!-- <span class="banner__subtitle text-light pl-4">Solution</span> -->
               </div>
               <span class="banner__text fourth pt-4">
-                在此，我们欢迎优质项目来申请种子基金，一起共建雷达DeFi生态。作为项目方，请将项目名称、项目网址、项目简介、联系方式、项目类型、项目估值及期望募集资金等信息发送邮件至dev@radarlab.org申请。实验室将从产品、生态价值、团队、愿景等多方面对项目进行筛选，对最终的胜出者提供生态扶持。
+                在此，我们欢迎优质项目来申请种子基金，一起共建雷达DeFi生态。作为项目方，请将项目名称、项目网址、项目简介、联系方式、项目类型、项目估值及期望募集资金等信息发送邮件至 dev@radarlab.org 进行孵化申请。实验室将从产品、生态价值、团队、愿景等多方面对项目进行筛选，对最终胜出者提供生态扶持。
               </span>
             </div>
             <div class="my-md-5">
@@ -175,7 +175,7 @@
                           <!-- <a class="banner__button d-inline-block mr-3 mr-md-4" href="javascript:void(0)"
                             >Our Focus</a
                           > -->
-                          <a class="footer__button d-inline-block mr-md-4" href="mailto:dev@radarlab.org">立即申请</a>
+                          <a class="apl_now footer__button d-inline-block mr-md-4" href="javascript:void(0)">立即申请</a>
                         </div>
                       </div>
                     </div>
@@ -206,9 +206,7 @@
               >
                 <!-- <span class="banner__text-small">About Vallua</span> -->
                 <h2 class="banner__title title-webdoor second">
-                  雷达DeFi生态<br>
-                  下一个10年<br>
-                  最大风口<br>
+                  雷达DeFi生态,<br> 下个10年最大的风口<br>
                 </h2>
               </div>
             </div>
@@ -281,9 +279,7 @@
                       <!-- <a class="banner__button d-inline-block mr-3 mr-md-4" href="javascript:void(0)"
                         >Our Focus</a
                       > -->
-                      <a class="footer__button d-inline-block mr-md-4" href="mailto:dev@radarlab.org"
-                        >立即申请</a
-                      >
+                      <a class="apl_now footer__button d-inline-block mr-md-4" href="javascript:void(0)" onclick="showMore">立即申请</a>
                     </div>
                   </div>
                 </div>
@@ -345,5 +341,21 @@
     </footer>
 
     <script defer async src="assets/scripts/scripts.min.js"></script>
+    <script>
+      function showMore () {
+        var sel = document.body.clientWidth <768 ? 'menu-mobile' : 'menu-desktop'
+        var ele = document.querySelector(`.${sel}`)
+        var ele2 = document.querySelector(`.${sel} .slice-menu`)
+        ele.style.setProperty('top', '0', 'important')
+        ele2.style.setProperty('left', '0', 'important')
+        ele2.style.setProperty('opacity', '1', 'important')
+      }
+      window.onload = function (e) {
+        let cliEs = document.querySelectorAll('.apl_now')
+        cliEs.forEach(ref => {
+          ref.addEventListener('click', function (e){ showMore() })
+        })
+      }
+    </script>
   </body>
 </html>
