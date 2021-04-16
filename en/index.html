@@ -18,7 +18,7 @@
 
   gtag('config', 'G-WFRLCLVXC0');
 </script>
-    <link rel="stylesheet" href="assets/styles/styles.min.css" media="all" />
+    <link rel="stylesheet" href="assets/styles/styles.min.css?v-1.0.0" media="all" />
   </head>
   <body>
     <header class="header py-3 py-md-0">
@@ -154,7 +154,7 @@
     <main class="home">
       <section id="webdoor" class="banner d-flex align-items-center">
         <div class="container">
-          <div class="banner__slide">
+          <div class="banner__slide" style="padding-top: 100px;">
             <div class="banner__slide--2">
               <div class="banner__content webdoor-content d-flex flex-column text-center text-md-left" style="margin: 0 auto">
                 <div style="display: flex;justify-content: space-between;flex-direction: column">
@@ -167,28 +167,45 @@
                     </div>
                     <div class="d-flex flex-row justify-content-center" style="margin-top: 1.2rem">
                       <span class="banner__text d-none d-md-block" style="font-size: 40px;font-weight: 400">
-                        COMING SOON
+                        <!-- COMING SOON -->
                       </span>
                     </div>
                   </div>
-                  <div class="d-flex flex-column justify-content-between z-index-9" style="max-width: 550px;margin-top: 8.2rem;text-align: left;">
-                    <h3>RADR Lab DeFi Project Incubation Is In Progress</h3>
-                    <span class="banner__text d-md-block" style="font-size: 20px;margin-bottom: 2.5rem">
-                      DeRa.Finance is calling for DeFi projects. <br>Be the first APP on DeRa.Finance and earn support from our seed fund.
-                    </span>
-                    <div class="row">
-                      <div class="col-12 col-md-8 d-flex flex-wrap justify-content-between z-index-9"
-                        data-aos="zoom-in-up" data-aos-duration="1000">
-                        <div class="pb-4 pb-md-0">
-                          <!-- <a class="banner__button d-inline-block mr-3 mr-md-4" href="javascript:void(0)"
-                            >Our Focus</a
-                          > -->
-                          <a class="apl_now footer__button d-inline-block mr-md-4" href="javascript:void(0)" onclick="showMore">Apply Now</a>
+
+                  <div class="row z-index-9" style="margin-top: 8.2rem;text-align: left;">
+                    <div class="col-12 col-md-6 p-r-5">
+                      <h3>RADR Lab DeFi Project Incubation Is In Progress</h3>
+                      <span class="banner__text d-md-block" style="font-size: 20px;margin-bottom: 2.5rem">
+                        DeRa.Finance is calling for DeFi projects. <br>Be the first APP on DeRa.Finance and earn support from our seed fund.
+                      </span>
+                      <div class="row">
+                        <div class="col-12 col-md-8 d-flex flex-wrap justify-content-between z-index-9"
+                          data-aos="zoom-in-up" data-aos-duration="1000">
+                          <div class="pb-4">
+                            <!-- <a class="banner__button d-inline-block mr-3 mr-md-4" href="javascript:void(0)"
+                              >Our Focus</a
+                            > -->
+                            <a class="apl_now footer__button d-inline-block mr-md-4" href="javascript:void(0)" style="padding: 16px 60px;">Apply Now</a>
+                          </div>
                         </div>
                       </div>
                     </div>
-
+                    <div class="col-12 col-md-6 p-l-5">
+                      <h3>DeRa fundamental project: GeneChain will release testnet soon</h3>
+                      <span class="banner__text d-md-block" style="font-size: 20px;margin-bottom: 2.5rem">
+                        GeneChain is a decentralized, efficient, and secure public chain, which realizes smart contract compatibility on the basis of supporting high-performance transactions.</span>
+                      <div class="row">
+                        <div class="col-12 col-md-8 d-flex flex-wrap justify-content-between z-index-9"
+                          data-aos="zoom-in-up" data-aos-duration="1000">
+                          <div class="pb-4">
+                            <a class="footer__button button-outline d-inline-block mr-md-4" href="https://genechain.io/en/index.html" style="padding: 16px 60px;">Learn more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+
                 </div>
               </div>
             </div>
@@ -355,7 +372,7 @@
       </div>
     </footer>
 
-    <script defer async src="assets/scripts/scripts.min.js"></script>
+    <script defer async src="assets/scripts/scripts.min.js?v-1.0.0"></script>
     <script>
       function showMore () {
         var sel = document.body.clientWidth <768 ? 'menu-mobile' : 'menu-desktop'
